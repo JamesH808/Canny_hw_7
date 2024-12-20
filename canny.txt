@@ -1,0 +1,15 @@
+After debugging I realized I hadn't set the channel size to a reasonable amount so only 1 frame was being processed at a time.
+It also took me a while to figure out the time difference to calculate the fps but I realized I had to set last time to 
+current time after printing everything out. 
+
+Gaussian smooth:
+        -gaussian kernel: <.1%
+        -Blurx: 12.46%
+        -Blury: 25.74%
+derivx_y: 13.45%
+magx_y: 4.57%
+non_max: 26.40%
+apply_hyst: 17.33%
+
+from the last assignment we can see in this assignment that a lot of frames are sent to the monitor before it can process a 
+single frame through the delay and fps measurements.
