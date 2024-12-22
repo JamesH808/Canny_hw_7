@@ -143,6 +143,18 @@ This modular design ensures a clear separation of responsibilities and facilitat
 
 The included sample image demonstrates single-frame processing. To test with multiple frames, provide a sequence of input images.
 
+Results for finding bottleneck:
+Gaussian smooth:
+        -gaussian kernel: <.1%
+        -Blurx: 12.46%
+        -Blury: 25.74%
+derivx_y: 13.45%
+magx_y: 4.57%
+non_max: 26.40%
+apply_hyst: 17.33%
+
+The Gaussian smooth module takes up the most percentage of time for image processing.
+
 ---
 
 ## Future Improvements
